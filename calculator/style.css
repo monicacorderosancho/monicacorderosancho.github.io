@@ -23,8 +23,12 @@ label, input{
 	font-family: Raleway,serif;
 	display:block;
 	width: 100%;
-
 }
+div#input input
+{
+	display:inline;
+}
+
 
 .bajada {
 	background-color: #52BE80;
