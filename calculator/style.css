@@ -15,8 +15,6 @@ div#content{
 
 .cuerpo {
     font-family: Raleway,serif;
-   
-
 }
 
 label, input{
@@ -78,7 +76,6 @@ span#resultado {
  }
 
  .detail {
- 	display: inline-block; 
 	width: 100%;
 	text-align: right; 
  }
