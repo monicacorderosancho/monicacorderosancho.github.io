@@ -2,13 +2,15 @@
 .cuerpo {
 
 	margin: 20em;
+	text-align: left;
 }
 
 .titulo {
 
 font-family: 'Indie Flower', cursive;
 font-size: 3em;
-text-align: left
+text-align: center;
+margin-bottom: 2em;
 
 
 }
@@ -33,4 +35,13 @@ list-style: none;
 ul li {
 
 	margin: 2em;
+}
+
+
+.nyctexto {
+
+	font-family: 'Indie Flower', cursive;
+	font-size: 0.80em;
+	margin: 10em;
+	text-align: left: ;
 }
