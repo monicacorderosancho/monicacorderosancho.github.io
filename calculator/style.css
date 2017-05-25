@@ -22,7 +22,7 @@ label, input{
 	display:block;
 	width: 100%;
 }
-div#input input
+div.input input
 {
 	display:inline;
 }
