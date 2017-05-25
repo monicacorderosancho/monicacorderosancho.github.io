@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+    <!--  Buenas pràcticas. OJO QUE FALTAN CAMPOS POR RELLENAR -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Raleway|Roboto" rel="stylesheet">
+</head>
+ <body>
+    <script src="js/script.js"></script>
+    <!--  sección de la entrada -->
+    <div id='content'>
+    <section>
+      <h1 class="titulo">How much can your <br>wallet take?</h1>
+    </section>
+    <section class="bajada">
+      <p>Low income non-resident aliens must face steep loan conditions from local loan sharks with figures that go over 3% weekly interest rate, which amounts to a 156% yearly interest rate.</p>
+      <p>Find out how much you would pay if you must make a deal with a money lender with our calculator</p>
+    </section>
+    <!--  elemento para la entrada de datos -->
+    <section class="cuerpo">
+      <div>
+          <p>Type how much money you need</p>
+          <div class="form-input">
+            <label for="montodeprestamo" class = "box" >Amount</label>
+            <span class="detail">$</span>
+			<input id="montodeprestamo"></input>
+          </div>
+          <p>Enter your weekly interest rate (3% or above)</p>
+          <div class="form-input">
+            <label for="tasainteres" class = "box" >Interest rate</label>
+            <span class="detail">%</span>
+			<input id="tasainteres"></input>
+          </div>
+          <p>Enter the number of weeks you need to pay the loan</p>
+          <div class="form-input">
+            <label for="plazopago" class = "box"></label>
+            <span class="detail">weeks</span>
+
+			<input id="plazopago"></input>
+          </div>
+     	<!--  boton que dispara la accion -->
+          <div id="bottom-button">
+            <button onclick="calculomontopresta()">Calculate</button>
+            <span class="detail">$</span>
+
+
+          </div>
+      </div>
+      <!--  Aquí el resultado -->
+      <div>
+          <p>Amount owed</p>
+          <span id="resultado"></span>
+      </div>
+  </div>
+ </body>
+</html>

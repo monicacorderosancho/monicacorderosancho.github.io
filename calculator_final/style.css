@@ -1,0 +1,80 @@
+.titulo {
+	font-family: roboto,serif;
+	font-size: 2em;
+	text-align: center;
+
+}
+
+div#content{
+	margin: auto;
+	margin-top:20px;
+	width: 400px;
+	background-color: #52BE80;
+	padding:30px;
+}
+
+.cuerpo {
+    font-family: Raleway,serif;
+   
+
+}
+
+label, input{
+	font-family: Raleway,serif;
+	display:block;
+	width: 100%;
+
+}
+
+.bajada {
+	background-color: #52BE80;
+	font-family: Raleway,serif;
+	font-size:1em; 
+}
+
+#bottom-button
+{
+	margin-top: 10px;
+	text-align: center;
+
+}
+
+
+span#resultado {
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.box { 
+	display: inline-block; 
+	width: 100%;
+	text-align: left; 
+ }
+
+.form-input
+{
+	margin-bottom:5px;
+	font-size:16px;
+}
+.form-input input 
+{
+	font-size:30px;
+	text-align:right;
+	width:45%;
+}
+ #resultado
+ {	
+	display:block;
+	height:30px;
+	color: #E74C3C;
+	font-weight:bold;
+	font-size:15px;
+	text-align: center;
+
+ }
+
+ .detail {
+ 	display: inline-block; 
+	width: 100%;
+	text-align: right; 
+ }
