@@ -1,0 +1,36 @@
+
+.cuerpo {
+
+	margin: 20em;
+}
+
+.titulo {
+
+font-family: 'Indie Flower', cursive;
+font-size: 3em;
+text-align: left
+
+
+}
+
+.estilo {
+
+font-family: 'Roboto', sans-serif;
+font-size: 2em;
+text-align: center;
+color:#FF7043;
+text-decoration: none;
+
+
+
+}
+
+ul {
+
+list-style: none;	
+	} 
+
+ul li {
+
+	margin: 2em;
+}
