@@ -1,6 +1,6 @@
 .titulo {
-	font-family: 'Shrikhand', cursive;
-	font-size: 2em;
+	font-family: 'Roboto', cursive;
+	font-size: 1.65em;
 	text-align: center;
 
 }
@@ -9,18 +9,21 @@ div#content{
 	margin: auto;
 	margin-top:20px;
 	width: 400px;
-	background-color: #52BE80;
-	padding:30px;
+	background-color: #80CBC4;
+	padding:1.4em;
+	text-align: left;
 }
 
 .cuerpo {
     font-family: Raleway,serif;
+    margin-top: 1em;
+   text-align: left;
 }
 
 label, input{
 	font-family: Raleway,serif;
 	display:block;
-	width: 100%;
+	width: 100%; 
 }
 div.input input
 {
@@ -29,7 +32,7 @@ div.input input
 
 
 .bajada {
-	background-color: #52BE80;
+	background-color: #80CBC4;
 	font-family: Raleway,serif;
 	font-size:1em; 
 }
@@ -68,7 +71,7 @@ span#resultado {
  {	
 	display:block;
 	height:30px;
-	color: #E74C3C;
+	color: #C62828;
 	font-weight:bold;
 	font-size:15px;
 	text-align: center;
@@ -78,6 +81,6 @@ span#resultado {
  .detail {
 	width: 100%;
 	text-align: right; 
-	 font-size:30px;
-	 margin-left:5px;
+	font-size:1em;
+	margin-left:5px;
  }

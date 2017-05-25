@@ -10,57 +10,68 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Lato|Raleway|Roboto" rel="stylesheet">
 </head>
+ 
  <body>
     <script src="js/script.js"></script>
     <!--  sección de la entrada -->
     <div id='content'>
+   
     <section>
-      <h1 class="titulo">How much can your <br>wallet take?</h1>
+      <h1 class="titulo">How much can your wallet take?</h1>
     </section>
+   
     <section class="bajada">
-      <p>Low income non-resident aliens must face steep loan conditions from local loan sharks with figures that go over 3% weekly interest rate, which amounts to a 156% yearly interest rate.</p>
+      <p>Low income non-resident aliens must face steep loan conditions from local loan sharks with figures.</p>
       <p>Find out how much you would pay if you must make a deal with a money lender with our calculator</p>
-    </section>
+     </section>
     <!--  elemento para la entrada de datos -->
+    
     <section class="cuerpo">
-      <div>
-          <p>Type how much money you need</p>
-          <div class="form-input">
+    <div>
+            <p>Type how much money you need:</p>
+            <div class="form-input">
             <label for="montodeprestamo" class = "box" >Amount</label>
-		 <div class="input">
-	    		<input id="montodeprestamo"></input>
+		   <div class="input">
+	    		 <input id="montodeprestamo"></input>
 		        <span class="detail">$</span>
-		</div>
-          </div>
-          <p>Enter your weekly interest rate (3% or above)</p>
+		    </div>
+      </div>
+          
+          <p>Enter your weekly interest rate (3% or above):</p>
           <div class="form-input">
-            <label for="tasainteres" class = "box" >Interest rate</label>
-		  <div class="input">
-			<input id="tasainteres"></input>
-			<span class="detail">%</span>
-		  </div>
-          </div>
-          <p>Enter the number of weeks you need to pay the loan</p>
+          <label for="tasainteres" class = "box" >Interest rate</label>
+		  
+         <div class="input">
+			   <input id="tasainteres"></input>
+			   <span class="detail">%</span>
+		     </div>
+          
+      </div>
+          <p>Enter the number of weeks you need to pay the loan:</p>
           <div class="form-input">
-            <label for="plazopago" class = "box"></label>
+          <label for="plazopago" class = "box"></label>
             
 		<div class="input">
-			<input id="plazopago"></input>
-		        <span class="detail">weeks</span>
-		 </div>
-          </div>
+			   <input id="plazopago"></input>
+		     <span class="detail">weeks</span>
+		      </div>
+          
+      </div>
      	<!--  boton que dispara la accion -->
           <div id="bottom-button">
-            <button onclick="calculomontopresta()">Calculate</button>
-
-
+          <button onclick="calculomontopresta()">Calculate</button>
           </div>
+      
       </div>
       <!--  Aquí el resultado -->
+      
       <div>
-          <p>Amount owed</p>
+          <p>Amount of money owed:</p>
           <span id="resultado"></span>
       </div>
-  </div>
+  
+   </div>
+ 
  </body>
+
 </html>
