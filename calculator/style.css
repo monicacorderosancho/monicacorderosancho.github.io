@@ -5,13 +5,27 @@
 
 }
 
+
 div#content{
 	margin: auto;
-	margin-top:20px;
-	width: 400px;
+	margin-top:2%;
+	width: 380px;
 	background-color: #80CBC4;
-	padding:1.4em;
+	padding:2%;
 	text-align: left;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		div#content
+		{
+			width: 320px;
+		}
 }
 
 .cuerpo {
@@ -23,7 +37,10 @@ div#content{
 label, input{
 	font-family: Raleway,serif;
 	display:block;
-	width: 100%; 
+	width: 100%;
+	-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
 }
 div.input input
 {
@@ -34,7 +51,7 @@ div.input input
 .bajada {
 	background-color: #80CBC4;
 	font-family: Raleway,serif;
-	font-size:1em; 
+	font-size:1em;
 }
 
 #bottom-button
@@ -53,10 +70,10 @@ span#resultado {
     font-family: Raleway,serif;
 }
 
-.box { 
-	display: inline-block; 
+.box {
+	display: inline-block;
 	width: 100%;
-	text-align: left; 
+	text-align: left;
  }
 
 .form-input
@@ -64,14 +81,14 @@ span#resultado {
 	margin-bottom:5px;
 	font-size:16px;
 }
-.form-input input 
+.form-input input
 {
 	font-size:30px;
 	text-align:right;
 	width:45%;
 }
  #resultado
- {	
+ {
 	display:block;
 	height:30px;
 	color: #C62828;
@@ -82,7 +99,7 @@ span#resultado {
 
  .detail {
 	width: 100%;
-	text-align: right; 
+	text-align: right;
 	font-size:1em;
 	margin-left:5px;
  }
