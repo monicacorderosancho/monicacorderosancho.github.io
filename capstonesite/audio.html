@@ -1,0 +1,148 @@
+<!-- ///// NEW PAGE /////// -->
+<!DOCTYPE html>
+<html lang="en">
+<!-- Defines language -->
+
+<head>
+
+	<title>La adicción a la heroína: Un ciclo sin fin</title>
+	<!-- Go to http://fontawesome.io/get-started/ to generate your own embed code
+		and discover what you can do! Hint: see the footer social media links.
+		FAQ: https://cdn.fontawesome.com/help#qa-icons-code -->
+	<script src="https://use.fontawesome.com/701d683477.js"></script>
+	<meta charset="utf-8">
+	<!-- characters encoding -->
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<!-- Tells Internet Explorer how to behave in regards to the value you set (IE=edge for Internet Explorer Edge, etc). More info: https://stackoverflow.com/questions/6771258/what-does-meta-http-equiv-x-ua-compatible-content-ie-edge-do -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Basic metadata about you and the content of this page -->
+	<meta name="author" content="Monica Cordero Constanza Gallardo, Camila Montañez, Joaquín Torres; CUNY Graduate School of Journalism">
+	<meta name="description" content="La DEA tiene identificado al Bronx como un centro neurálgico del mercado de heroína para el noreste de los Estados Unidos. Este condado recibe cargamentos de droga provenientes de Sinaloa, México, y desde ahí se distribuye hacia las principales ciudades del este del país">
+	<meta name="keywords" content="heroina,Bronx,Nueva York" />
+	<!-- Meta data for Facebook  -->
+	<meta property="og:site_name" content="..." />
+	<!-- add website domain name -->
+	<meta property="og:title" content="Detrás de la industria de heroina del Bronx, la sede central del tráfico en el noreste">
+	<!-- add story title -->
+	<meta property="Detrás de la industria de heroina del Bronx, la sede central del tráfico en el noreste" content="...">
+	<!-- add a longer story title -->
+	<meta property="og:image" content="..." />
+	<!-- add url or path to image you want people to see on Facebook when you share the ling to this story -->
+	<meta property="og:description" content="..." />
+	<!-- add a short summary or lead you want people to see on Facebook when you share the ling to this story -->
+	<meta property="og:url" content="..." />
+	<!-- add the webpage url -->
+	<meta property="og:type" content="article" />
+	<!-- type of content: it's an article -->
+	<!-- Twitter meta data -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="..." />
+	<!-- add your twitter handle like @yourname or https://twitter.com/yourname -->
+	<!-- CSS Styles -->
+	<link href="css/normalize.css" rel="stylesheet" type="text/css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif|Roboto:400,700" rel="stylesheet">
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/mediaelement/latest/mediaelementplayer.css" rel="stylesheet"/>
+	<script src="https://cdn.jsdelivr.net/mediaelement/latest/mediaelement-and-player.min.js"></script>
+
+	<script>
+		if (mejs.Features.isiOS) {
+							 $('select').find('option[value^="rtmp"]').prop('disabled', true)
+									 .end()
+									 .find('option[value$="webm"]').prop('disabled', true)
+									 .end()
+									 .find('option[value$=".mpd"]').prop('disabled', true)
+									 .end()
+									 .find('option[value$=".ogg"]').prop('disabled', true)
+									 .end()
+									 .find('option[value*=".flv"]').prop('disabled', true);
+					 }
+
+					 $('select').change(function () {
+							 var
+									 _this = $(this),
+									 media = _this.closest('div').prev('div').children('div:first').attr('id');
+
+							 mejs.players[media].setSrc(_this.val());
+							 mejs.players[media].setPoster('');
+							 mejs.players[media].load();
+					 });
+
+					 $(document).ready(function() {
+							 $('video, audio').mediaelementplayer({
+									 pluginPath: 'dist/',
+									 success: function () {
+											 $('.player').css('visibility', 'visible');
+									 }
+							 });
+					 });
+
+
+	</script>
+
+	<body>
+		<!-- Body content goes here -->
+		<header>
+			<!-- Header content goes here -->
+			<!-- Navigation menu -->
+			<nav>
+				<ul>
+			
+					</li>
+					<li><a href="index.html">Heroína en el Bronx</a>
+					</li>
+					<li><a href="video360.html">Video 360</a>
+					</li>
+					</li>
+				</ul>
+			</nav>
+			<!-- Story headline, lead and byline -->
+			<h1 class="display">La adicción a la heroína: Un ciclo sin fin</h1>
+			<h3 class="author"><span>Por </span><a href="https://www.google.com/search?q=who+is+john+doe&ie=utf-8&oe=utf-8" target="_blank">María Camila Montañez</a></h3>
+		</header>
+		<article>
+			
+					<!-- Start story-->
+			<p>Kimberly Santiago de 33 años sufrió un accidente mientras cargaba platos en el restaurante donde trabajaba en Naples, Florida. Tras el accidente, su doctor le recetó pastillas como Vicodin y Hydrocodone que son opioides para el dolor. </p>
+
+			<p>Su adicción por estos medicacamen incrementó con el tiempo. Llegó a tomar 180 pastillas al mes. </p>
+
+			<p>Hace cuatro años, Santiago decidió mudarse al Bronx. Un día no tenía su medicamento para el dolor de espalda que era insoportable y le pidió a un amigo del albergue donde vivia que le consiguiera algo. Desde ese día empezó a consumir heroína todos los dias. </p>
+
+			<p>Esta es la historia de Santiago y su adicción a la heroína, una droga que ha matado a más de mil personas en la ciudad de Nueva York según el departamento de salud. </p>
+
+			<p>Si quieres saber mas sobre como esta droga llega a las manos de adictos como Kimberly, lee <a href="index.html">Detrás de la industria de heroina del Bronx, la sede central del tráfico en el noreste.</a></p>
+
+			<!-- Main Image -->
+			<br>
+			<figure>
+				<img src="images/PHOTO_constanza_gallardo_2.jpg" alt="">
+			<figcaption>Fotografía: Constanza Gallardo.
+			</figure>
+			<br/>
+			<!-- Audio-->
+			<br>
+			<figure>
+				<div align="center">
+					<audio src="video/audio_montanez_mariacamila.mp3"></video>
+				</div>
+			</figure>
+			<br/>
+
+		</article>
+
+		<!-- Footer content -->
+		<footer>
+			<p>Compaarta la historia</p>
+			<div class="contact-info">	<a href="mailto:someone@example.com"><i class="fa fa-envelope-o fa-3" aria-hidden="true"></i></a>
+				<a href="https://www.facebook.com/yourfbname" target="_blank"><i class="fa fa-facebook-official fa-3" aria-hidden="true"></i></a>
+				<a href="https://twitter.com/yourname" target="_blank"><i class="fa fa-twitter-square fa-3" aria-hidden="true"></i></a>
+			</div>
+		</footer>
+		<!-- Don’t forget to close the body and the html in your HTML file. In JSFIDDLE I don't need to close the html -->
+	</body>
+</html>
