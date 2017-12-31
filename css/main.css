@@ -4,10 +4,50 @@ Author: Mónica Cordero Sancho
 Author website: https://monicacorderosancho.github.io
 License or copyright: esta web se construyó con base a lo aprendido en las clases y tutorias con Miguel Paz, profesor de Cuny Graduate School of Journalism.
 Version: dic 2018
+************************************************************
+***********************************************************/
+/***********************************
+
+
+/ Source: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'PT Serif',Georgia,serif;
+  font-size: 18px;
+  /* 16px is the standard font size and coul be replaced by 1em. 16px=1em. 
+	Use this conversion table to calculate pixels to em's http://pxtoem.com/ 
+	An em unit is a size relative to the current font size of that tag. 
+	By default, the font size is 16px, so we could use em units instead of px 
+	if we’re unsure what pixel size to use but want to make it relative sized.
+	Example:
+	header { font-size: 2em;
+	}
+	By default, that would be 2 times 16px (32px). 
+	However if we have something inside the header and use em units, it would 
+	be now based on 32px sizes.
+	Example: An h1 inside the header
+	header h1 { font-size: 1.5em;
+	}
+	The pixel size for this <h1> tag would be 1.5 times 32px (not 16px), 
+	so 48px large in pixel units.
+	Be sure to remember this if you want to use em units */
+  line-height: 1.5;
+}
+
 
 /******************************************************
 *******************************************************
-2. Header & Nav styles 
+2. Header & Nav styles (specific to header and nav)
 *******************************************************
 ******************************************************/
 
@@ -16,6 +56,9 @@ Version: dic 2018
 
 header {
   background-color: #ff6a2b;
+  /* If you wanted you could add a  
+	background-image. For this you can type, before background-color the property and value
+	background-image:url("insert here th url of the image");  */
   background-size: cover;
   color: #ffffff;
   font-family: AdelleBold,'Helvetica Neue', Helvetica, sans-serif; 
@@ -48,7 +91,7 @@ header {
   font-size: 18px;
   font-weight: 400;
   padding-bottom: 40px;
- 
+  /* added space in the bottom with padding */
 }
 
 /*header h3 a byline link*/
@@ -60,21 +103,50 @@ header {
 /*header h3 a:hover byline link on hover*/
 .author a:hover {text-decoration: underline;}
 
+/* Wondering what a bunch of selectors are doing together? 
+Selectors can be combined and will behave according to the syntaxis you used to combine them.
+.author a means	select all <a> elements inside <h3> elements that are inside the <header> element 
+.author a:hover means select all <a:hover> elements inside <h3> elements that are inside the <header> element
+A easy rule: the selector at the far right is the one that will be activated. 
+Here is a list with examples: https://www.w3schools.com/cssref/css_selectors.asp
+
 
 /* Navigation */
 
 nav {
   text-align: center;
   padding: 10px 0px 10px 0px;
-   width: 100%;
+  /* Top, right, bottom, left */
+  /* give it padding of 10px on all sides of the nav element */
+  width: 100%;
   background: rgba(10, 10, 10, 1);
-  }
+  /* I used RGBA or Red Green Blue Alpha instead of hexadecimal. 
+    In RGBA the Alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+    This means you can chosse transparency / opacity. Info: https://www.w3schools.com/css/css3_colors.asp
+    Use this calculator to go from turn a hexadecimal color into a rgba color: http://hex2rgba.devoth.com/ 
+    /* want to turn the menu into a sticky menu? you can try this>>
+    position: fixed;  
+  	top: 0;
+  	width: 100%; 
+  	*/
+}
 
+/* display list aligned horizontal*/
 li {
   display: inline;
- 
+  /* Display: Every HTML element has a default value for display. 
+    Usually it's either "block" or "inline". 
+    Block: Elements like headings, paragraphs and list items display "block" by default, 
+    which means they strecth the whole width of the page and have line breaks before and after.
+    Inline: Links like the <a> tag and a few others display "inline" by default, wich means they 
+    exist within the normal flow of the text they are contained within. No line breaks and no 
+    taking the whole wide page. 
+    Info: http://marksheet.io/html-block-inline.html 
+    Examples: https://www.w3schools.com/css/css_display_visibility.asp */
   padding: 0px 10px 0px 10px;
- 
+  /* top right bottom left or give it 0px of top space, 10 px to 
+    the right, 0px to the bottom and 10px to the left. To remember it, this rule is also called 
+    TRouBLE or TRBL for Top Right Bottom Left */
 }
 
 /*links in nav menu*/
@@ -102,7 +174,10 @@ article {
   padding: 20px;
   margin: auto;
   text-align: justify;
- 
+  /* set the margin property to auto to horizontally center the element 
+  within its container. If you do margin: 0 auto that means: 
+  top and bottom give it a margin 0, and the left and right margin auto.
+  More: https://css-tricks.com/forums/topic/why-or-how-does-margin0-auto-work/ */
 }
 
 /* Body headings */
@@ -142,16 +217,25 @@ figcaption {
 
 /*full width figure and figcaption for images set to full width of the viewport*/
 .full-width
+/* figure with full width class, this will override the max-width of 
+the article selector that acts as a container with a max-width.
+It allows you to display an image in the full width of the viewport
+Trick from https://css-tricks.com/full-width-containers-limited-width-parents/ */
 {
   width: 100vw;
   /* vw means viewport width */
   position: relative;
+  /* Explanation: 
+  https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/
+  Examples: https://www.w3schools.com/css/css_positioning.asp */
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
 }
 
+/*inherits font size and line height from global styles 
+and font family and font weight from the selector figcaption*/
 .full-width-caption {padding: 5px 30px 5px 30px;}
 
 /*div container for the 3 images and captions*/
@@ -199,6 +283,11 @@ blockquote {
 ******************************************************/
 
 
+/* Referencing the class twitter-tweet of your blockquote. 
+This is a child class. Meaning you must start it with the 
+element.classname or blockquote.twitter-tweet. Followed by 
+the properties and values */
+
 blockquote.twitter-tweet {
   display: inline-block;
   font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
@@ -216,6 +305,10 @@ blockquote.twitter-tweet {
 }
 
 
+/* Referencing the p or paragraph of the blockquote.twitter-tweet 
+of your blockquote. This is a child class: 
+element.classname space element. Or blockquote.twitter-tweet p. 
+Followed by the properties and values */
 
 blockquote.twitter-tweet p {
   font-size: 16px;
@@ -224,6 +317,10 @@ blockquote.twitter-tweet p {
 }
 
 
+/* Referencing the a or link of the blockquote.twitter-tweet of 
+your blockquote. This is a child class: 
+element.classname space element. Or blockquote.twitter-tweet a. 
+Followed by the properties and values */
 
 blockquote.twitter-tweet a {
   color: inherit;
@@ -233,6 +330,16 @@ blockquote.twitter-tweet a {
 }
 
 
+/* Referencing the pseudo class of a or link of the blockquote.twitter-tweet 
+of your blockquote. 
+Pseudo classes define a state like hover, visited and others. 
+After the element you add the condition starting with : 
+element.classname space element:state. 
+Or blockquote.twitter-tweet a:hover and blockquote.twitter-tweet a:focus. 
+FYI: The :focus selector is allowed on elements that accept keyboard events 
+or other user inputs. Followed by the properties and values. 
+Full list of pseudo classes and other selectors 
+https://www.w3schools.com/cssref/css_selectors.asp */
 
 blockquote.twitter-tweet a:hover,
 blockquote.twitter-tweet a:focus {
@@ -279,7 +386,8 @@ footer p {
 ******************************************************/
 
 
-/* MEDIA QUERIES. 
+/* MEDIA QUERIES. The syntax for media queries looks like this. 
+  The first part " @media (max-width: 700px) { " is setting a condition - in this case that the browser should be smaller than 500px - and when that condition is true the CSS inside gets activated. So that means that if the browser is smaller than 500 px of width then make the body background red. */
 
 @media (max-width: 700px) {
   /* Now after that add some styles that will make the page look better at narrower widths and mobile devices.*/
@@ -287,12 +395,12 @@ footer p {
     display: block;
     padding: 5px;
   }
-
+  /*navigation links should sit on top of each other rather than inline*/
   nav ul li a/*links in nav menu*/
   {
     font-size: 12px;
   }
-
+  /*font should be smaller when the browser is small */
   .display/*header h1 story title*/
   {
     font-size: 36px;
@@ -315,9 +423,11 @@ footer p {
   blockquote {
     font-size: 18px;
   }
-
+  /*div container for the 3 images and captions, change flex direction to column instead of row
+  so they images align vertical in order up to down */
   .img-wrapper {
   display: flex;
+  /* flex-wrap: wrap;  Delete this one after testing mediaqueries for images*/
   flex-direction: column;
   justify-content: space-between;
 }
