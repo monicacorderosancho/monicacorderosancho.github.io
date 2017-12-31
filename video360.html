@@ -1,0 +1,132 @@
+<!-- ///// NEW PAGE /////// -->
+<!DOCTYPE html>
+<html lang="en">
+<!-- Defines language -->
+
+<head>
+
+	<title>Adicción monitoreada en las calles de Nueva York</title>
+	<!-- Go to http://fontawesome.io/get-started/ to generate your own embed code
+		and discover what you can do! Hint: see the footer social media links.
+		FAQ: https://cdn.fontawesome.com/help#qa-icons-code -->
+	<script src="https://use.fontawesome.com/701d683477.js"></script>
+	<meta charset="utf-8">
+	<!-- characters encoding -->
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Monica Cordero Constanza Gallardo, Camila Montañez, Joaquín Torres; CUNY Graduate School of Journalism">
+	<meta name="description" content="La DEA tiene identificado al Bronx como un centro neurálgico del mercado de heroína para el noreste de los Estados Unidos. Este condado recibe cargamentos de droga provenientes de Sinaloa, México, y desde ahí se distribuye hacia las principales ciudades del este del país">
+	<meta name="keywords" content="heroina,Bronx,Nueva York" />
+	<meta property="og:site_name" content="..." />
+	<meta property="og:title" content="Detrás de la industria de heroina del Bronx, la sede central del tráfico en el noreste">
+	<meta property="Detrás de la industria de heroina del Bronx, la sede central del tráfico en el noreste" content="...">
+	<meta property="og:image" content="..." />
+	<meta property="og:description" content="..." />
+	<meta property="og:url" content="..." />
+	<meta property="og:type" content="article" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="..." />
+	<link href="css/normalize.css" rel="stylesheet" type="text/css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif|Roboto:400,700" rel="stylesheet">
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/mediaelement/latest/mediaelementplayer.css" rel="stylesheet"/>
+	<script src="https://cdn.jsdelivr.net/mediaelement/latest/mediaelement-and-player.min.js"></script>
+
+	<script>
+		if (mejs.Features.isiOS) {
+							 $('select').find('option[value^="rtmp"]').prop('disabled', true)
+									 .end()
+									 .find('option[value$="webm"]').prop('disabled', true)
+									 .end()
+									 .find('option[value$=".mpd"]').prop('disabled', true)
+									 .end()
+									 .find('option[value$=".ogg"]').prop('disabled', true)
+									 .end()
+									 .find('option[value*=".flv"]').prop('disabled', true);
+					 }
+
+					 $('select').change(function () {
+							 var
+									 _this = $(this),
+									 media = _this.closest('div').prev('div').children('div:first').attr('id');
+
+							 mejs.players[media].setSrc(_this.val());
+							 mejs.players[media].setPoster('');
+							 mejs.players[media].load();
+					 });
+
+					 $(document).ready(function() {
+							 $('video, audio').mediaelementplayer({
+									 pluginPath: 'dist/',
+									 success: function () {
+											 $('.player').css('visibility', 'visible');
+									 }
+							 });
+					 });
+
+
+	</script>
+
+	<body>
+		<!-- Body content -->
+		<header>
+			<!-- Header content -->
+			<!-- Navigation menu -->
+			<nav>
+				<ul>
+			
+					<li>
+					<li><a href="index.html">Reportaje principal</a>
+					</li>
+					<li><a href="audio.html">Audio: Un ciclo sin fin</a>
+					</li>
+					<li><a href="acercaproyecto.html">Acerca del proyecto</a>
+					</li>
+					</li>
+				</ul>
+
+
+				<!-- main botton -->
+		
+			</nav>
+			<!-- Story headline, lead and byline -->
+			<h1 class="display">Adicción monitoreada en las calles de Nueva York</h1>
+			<h3 class="author"><span>Por </span><a href="https://www.google.com/search?q=who+is+john+doe&ie=utf-8&oe=utf-8" target="_blank">Constanza Gallardo y Joaquín Torres</a></h3>
+		</header>
+		<article>
+
+
+			<!-- Video  -->
+			<br>
+			<figure>
+			<div align="center">
+				<iframe width="750" height="600" src="https://www.youtube.com/embed/7xgaDb-XbMU" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+				<figcaption>
+			</div>
+			</figure>
+
+			<br/>
+
+			</figure>
+
+			<p>En Estados Unidos cada 19 minutos muere una persona por sobredosis resultado del consumo de opioides. Por eso en la zona de Washington Heights en Nueva York, Corner Project presta sus baños a adictos de heroína. Cada 5 minutos monitorean a los usuarios. El personal se encuentra preparados con equipo médico para reanimar a adictos en medio de una sobredosis. </p>
+
+			</p>Conoce estos baños y lo que se vive en ellos en este reportaje VR 360. </p>
+
+			<!-- End of article content -->
+		</article>
+
+		<!-- Footer content -->
+		<footer>
+			<p>Compaarta la historia</p>
+			<div class="contact-info">	<a href="mailto:someone@example.com"><i class="fa fa-envelope-o fa-3" aria-hidden="true"></i></a>
+				<a href="https://www.facebook.com/yourfbname" target="_blank"><i class="fa fa-facebook-official fa-3" aria-hidden="true"></i></a>
+				<a href="https://twitter.com/yourname" target="_blank"><i class="fa fa-twitter-square fa-3" aria-hidden="true"></i></a>
+			</div>
+		</footer>
+	</body>
+</html>

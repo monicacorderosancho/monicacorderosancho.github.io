@@ -1,0 +1,131 @@
+<!-- ///// NEW PAGE /////// -->
+<!DOCTYPE html>
+<html lang="en">
+<!-- Defines language -->
+
+<head>
+
+	<title>La adicción a la heroína: Un ciclo sin fin</title>
+	<script src="https://use.fontawesome.com/701d683477.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Monica Cordero Constanza Gallardo, Camila Montañez, Joaquín Torres; CUNY Graduate School of Journalism">
+	<meta name="description" content="La DEA tiene identificado al Bronx como un centro neurálgico del mercado de heroína para el noreste de los Estados Unidos. Este condado recibe cargamentos de droga provenientes de Sinaloa, México, y desde ahí se distribuye hacia las principales ciudades del este del país">
+	<meta name="keywords" content="heroina,Bronx,Nueva York" />
+	<meta property="og:site_name" content="..." />
+	<meta property="og:title" content="Detrás de la industria de heroina del Bronx, la sede central del tráfico en el noreste">
+	<meta property="Detrás de la industria de heroina del Bronx, la sede central del tráfico en el noreste" content="...">
+	<meta property="og:image" content="..." />
+	<meta property="og:description" content="..." />
+	<meta property="og:url" content="..." />
+	<meta property="og:type" content="article" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="..." />
+	<!-- CSS Styles -->
+	<link href="css/normalize.css" rel="stylesheet" type="text/css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif|Roboto:400,700" rel="stylesheet">
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/mediaelement/latest/mediaelementplayer.css" rel="stylesheet"/>
+	<script src="https://cdn.jsdelivr.net/mediaelement/latest/mediaelement-and-player.min.js"></script>
+
+	<script>
+		if (mejs.Features.isiOS) {
+							 $('select').find('option[value^="rtmp"]').prop('disabled', true)
+									 .end()
+									 .find('option[value$="webm"]').prop('disabled', true)
+									 .end()
+									 .find('option[value$=".mpd"]').prop('disabled', true)
+									 .end()
+									 .find('option[value$=".ogg"]').prop('disabled', true)
+									 .end()
+									 .find('option[value*=".flv"]').prop('disabled', true);
+					 }
+
+					 $('select').change(function () {
+							 var
+									 _this = $(this),
+									 media = _this.closest('div').prev('div').children('div:first').attr('id');
+
+							 mejs.players[media].setSrc(_this.val());
+							 mejs.players[media].setPoster('');
+							 mejs.players[media].load();
+					 });
+
+					 $(document).ready(function() {
+							 $('video, audio').mediaelementplayer({
+									 pluginPath: 'dist/',
+									 success: function () {
+											 $('.player').css('visibility', 'visible');
+									 }
+							 });
+					 });
+
+
+	</script>
+
+	<body>
+		<!-- Body content goes here -->
+		<header>
+			<!-- Header content goes here -->
+			<!-- Navigation menu -->
+			<nav>
+				<ul>
+			
+					</li>
+					<li><a href="index.html">Reportaje principal</a>
+					</li>
+					<li><a href="video360.html">Video 360: Adicción en NY</a>
+					</li>
+					<li><a href="index.html">Audio: Un ciclo sin fin</a>
+					</li>
+					</li>
+
+				</ul>
+			</nav>
+			<!-- Story headline, lead and byline -->
+			<h1 class="display">Historia del proyecto</h1>
+			
+		</header>
+		
+
+		<article>
+			
+					<!-- Start story-->
+
+			<!-- Main Image -->
+			<br>
+			<figure>
+				<img src="images/fotogrupo.jpg" alt="">
+			<figcaption>Fotografía: Maite Hernández.
+			</figure>
+			<br/>
+
+
+			<p>Constanza Gallardo, Joaquín Torres, Mónica Cordero y María Camila Montañez (de izquierda a derecha) forman parte de la primera generación del <b>Programa Bilingüe de la Maestría de Periodismo de CUNY Graduate School of Journalism</b> dirigida por Graciela Mochkofsky.</p>
+
+			<p>El reportaje  “Detrás de la industria de heroína del Bronx, la sede central del tráfico en el noreste”  fue el resultado del trabajo en la clase de Periodismo de Investigación que impartieron la periodista de investigación Ginger Thompson y la investigadora Cristina Maldonado.</p>
+
+			<p>El desarrollo de la página web se realizó con base a tutorías del profesor de la maestría y periodista de investigación Miguel Paz.  </p>
+
+			<p ALIGN=center><b>Ciudad de Nueva York, Diciembre 2017</b>.</p> 
+
+
+		</article>
+
+
+		<!-- Footer content -->
+		<footer>
+			<p>Compaarta la historia</p>
+			<div class="contact-info">	<a href="mailto:someone@example.com"><i class="fa fa-envelope-o fa-3" aria-hidden="true"></i></a>
+				<a href="https://www.facebook.com/yourfbname" target="_blank"><i class="fa fa-facebook-official fa-3" aria-hidden="true"></i></a>
+				<a href="https://twitter.com/yourname" target="_blank"><i class="fa fa-twitter-square fa-3" aria-hidden="true"></i></a>
+			</div>
+		</footer>
+		
+	</body>
+</html>
